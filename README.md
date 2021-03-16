@@ -21,6 +21,6 @@ use powerlevel10k theme (https://github.com/romkatv/powerlevel10k)
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ln -s ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k/powerlevel10k.zsh-theme ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k.zsh-theme
-sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k"/g' ~/.zshrc >
+sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k"/g' ~/.zshrc
 ```
 
