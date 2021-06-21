@@ -1,10 +1,10 @@
 # My-linux-server-setting
 
-**install zsh, oh-my-zsh**
+**install tmux, zsh, oh-my-zsh**
 
 for Ubuntu
 ```bash
-apt update && apt install zsh curl
+apt update && apt install zsh curl tmux
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
