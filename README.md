@@ -1,11 +1,17 @@
 # My-linux-server-setting
 
-**install tmux, zsh, oh-my-zsh**
+**install fortune, tmux, zsh, oh-my-zsh**
 
 for Ubuntu
 ```bash
-apt update && apt install zsh curl tmux
+apt update && apt install zsh curl tmux fortune
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+**fortune setting**
+```bash
+mkdir -p ~/.local/fortune/
+
 ```
 
 **zsh setting**
