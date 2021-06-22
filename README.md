@@ -8,13 +8,22 @@ apt update && apt install zsh curl tmux
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+**download tmux conf**
+```bash
+wget https://raw.githubusercontent.com/MinooE/My-linux-server-setting/main/tmux.conf -o ~/.tmux.conf
+```
+
 **zsh setting**
 ```bash
 cat << EOF >> .zshrc
 # Custom Shell Setting
 set -o vi
 force_color_prompt=yes
+
+# fortune
+fortune $HOME/.local/fortune/
 EOF
+sed -i 's/plugins=(git)/plugins=(\ngit\ntmux\n)/g' ~/.zshrc
 ```
 
 use powerlevel10k theme (https://github.com/romkatv/powerlevel10k)
