@@ -1,16 +1,15 @@
-# My-linux-server-setting
-
-**install tmux, zsh, oh-my-zsh**
-
+# linux shell setting
 for Ubuntu
+**install tmux, zsh, oh-my-zsh**
 ```bash
 apt update && apt install zsh curl tmux
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-**download tmux conf**
+**tmux setting**
 ```bash
-wget https://raw.githubusercontent.com/MinooE/My-linux-server-setting/main/tmux.conf -o ~/.tmux.conf
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+wget https://raw.githubusercontent.com/MinooE/linux-shell-setting/main/tmux.conf -O ~/.tmux.conf
 ```
 
 **zsh setting**
